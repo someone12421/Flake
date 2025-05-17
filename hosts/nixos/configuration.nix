@@ -80,7 +80,6 @@
     "someone12421" = {
         imports = [
           ./home.nix
-          #catppuccin.homeManagerModules.catppuccin
           inputs.self.outputs.homeManagerModules.default
         ];
       };
