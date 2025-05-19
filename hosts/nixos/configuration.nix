@@ -99,13 +99,20 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+
+    #CLI Utils
     neovim
-    nixfmt-rfc-style
     wget
     git
     lm_sensors
+
+    #Desktop Apps
     kitty
     floorp
+
+    #Misc.
+    nixfmt-rfc-style
+
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
