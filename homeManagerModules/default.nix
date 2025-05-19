@@ -7,7 +7,4 @@
       ./temps.nix
     ];
     
-    kitty.enable =
-      lib.mkDefault true;
-
 }
