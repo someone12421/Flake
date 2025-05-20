@@ -50,6 +50,9 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Enable ADB
+  programs.adb.enable = true;
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -67,7 +70,7 @@
     isNormalUser = true;
     description = "Someone12421";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "adbusers" ];
     packages = with pkgs; [
       kdePackages.kate
     ];
@@ -109,6 +112,8 @@
     #Desktop Apps
     kitty
     floorp
+    pixelflasher
+    bottles
 
     #Misc.
     nixfmt-rfc-style
