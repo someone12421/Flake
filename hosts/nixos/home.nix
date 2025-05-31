@@ -29,6 +29,7 @@
     # Packages
     pkgs.vesktop
     pkgs.fastfetch
+    pkgs.ungoogled-chromium
 
     # Fonts
     pkgs.nerd-fonts.jetbrains-mono

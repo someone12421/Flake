@@ -24,6 +24,9 @@
   # Set the battery charge threshold to 80%
   battery-threshold.enable = true;
 
+  # Enable QMK 
+  hardware.keyboard.qmk.enable = true;
+
   # Set your time zone.
   time.timeZone = "Asia/Jerusalem";
 
@@ -108,6 +111,7 @@
     wget
     git
     lm_sensors
+    qmk
 
     #Desktop Apps
     kitty
