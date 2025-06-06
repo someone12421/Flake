@@ -96,7 +96,7 @@
   nvidia-hybrid.enable = true;
 
   #Enable ALVR
-  alvr.enable = true
+  alvr.enable = true;
 
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
