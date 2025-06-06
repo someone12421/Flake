@@ -5,6 +5,7 @@
       ./nvidia-hybrid.nix
       ./steam.nix
       ./battery-threshold.nix
+      ./alvr.nix
     ];
 
     steam.enable =
