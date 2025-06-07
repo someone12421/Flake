@@ -121,6 +121,7 @@
     floorp
     pixelflasher
     bottles
+    gparted
 
     #Misc.
     nixfmt-rfc-style
