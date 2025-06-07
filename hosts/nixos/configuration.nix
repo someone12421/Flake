@@ -115,6 +115,7 @@
     git
     lm_sensors
     qmk
+    btrfs-progs
 
     #Desktop Apps
     kitty
