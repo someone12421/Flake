@@ -92,6 +92,9 @@
     };
   };
 
+  # Enable Flatpak
+  services.flatpak.enable = true;
+
   #Enable NVIDIA PRIME
   nvidia-hybrid.enable = true;
 
