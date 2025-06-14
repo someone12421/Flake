@@ -30,6 +30,7 @@
     pkgs.vesktop
     pkgs.fastfetch
     pkgs.ungoogled-chromium
+    pkgs.prismlauncher
 
     # Fonts
     pkgs.nerd-fonts.jetbrains-mono
