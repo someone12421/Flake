@@ -33,6 +33,7 @@
     pkgs.prismlauncher
     pkgs.kdePackages.kdenlive
     pkgs.yt-dlp
+    pkgs.vlc
 
     # Fonts
     pkgs.nerd-fonts.jetbrains-mono
