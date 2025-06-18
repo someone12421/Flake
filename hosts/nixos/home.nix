@@ -31,6 +31,8 @@
     pkgs.fastfetch
     pkgs.ungoogled-chromium
     pkgs.prismlauncher
+    pkgs.kdePackages.kdenlive
+    pkgs.yt-dlp
 
     # Fonts
     pkgs.nerd-fonts.jetbrains-mono
