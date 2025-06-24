@@ -123,7 +123,7 @@
     #Desktop Apps
     kitty
     floorp
-    pixelflasher
+    #pixelflasher
     bottles
     gparted
 
