@@ -12,7 +12,9 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
-
+  boot.extraModprobeConfig = ''
+    options v4l2loopback devices=1 video_nr=1 card_label="OBS Cam" exclusive_caps=1
+  '';
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/0a7a3815-0f28-441a-9220-7ab4254da6f7";
       fsType = "ext4";
