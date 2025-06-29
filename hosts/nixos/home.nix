@@ -31,6 +31,7 @@
     pkgs.fastfetch
     pkgs.ungoogled-chromium
     pkgs.prismlauncher
+    pkgs.r2modman
     pkgs.kdePackages.kdenlive
     pkgs.yt-dlp
     pkgs.vlc
