@@ -87,18 +87,13 @@
         imports = [
           ./home.nix
           inputs.self.outputs.homeManagerModules.default
+          inputs.nix-flatpak.homeManagerModules.nix-flatpak
         ];
       };
     };
   };
 
-  # Enable Flatpak
-  services.flatpak.enable = true;
-
-  #Enable NVIDIA PRIME
   nvidia-hybrid.enable = true;
-
-  #Enable ALVR
   alvr.enable = true;
 
   # Enable automatic login for the user.
@@ -108,7 +103,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  #Enable AppImages
   programs.appimage.enable = true;
 
   # List packages installed in system profile. To search, run:
@@ -127,7 +121,6 @@
     kitty
     floorp
     #pixelflasher
-    bottles
     gparted
 
     #Misc.
@@ -135,7 +128,15 @@
 
   ];
 
-  # Enable OBS
+  services.flatpak = {
+    enable = true;
+    update.onActivation = true;
+
+    packages = [
+      "com.usebottles.bottles"
+    ];
+  };
+
   programs.obs-studio = {
     enable = true;
     enableVirtualCamera = true;

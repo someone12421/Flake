@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -17,6 +18,7 @@
         ./hosts/nixos/configuration.nix
         ./nixosModules
         inputs.home-manager.nixosModules.default
+        inputs.nix-flatpak.nixosModules.nix-flatpak
       ];
     };
 
