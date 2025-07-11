@@ -122,6 +122,7 @@
     floorp
     #pixelflasher
     gparted
+    qbittorrent
 
     #Misc.
     nixfmt-rfc-style
