@@ -6,6 +6,7 @@
       ./steam.nix
       ./battery-threshold.nix
       ./alvr.nix
+      ./stylix
     ];
 
     steam.enable =
