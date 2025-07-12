@@ -116,6 +116,7 @@
     lm_sensors
     qmk
     btrfs-progs
+    umu-launcher
 
     #Desktop Apps
     kitty
