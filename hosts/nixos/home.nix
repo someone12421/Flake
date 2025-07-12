@@ -35,6 +35,7 @@
     pkgs.kdePackages.kdenlive
     pkgs.yt-dlp
     pkgs.vlc
+    pkgs.lutris
 
     # Fonts
     pkgs.nerd-fonts.jetbrains-mono
