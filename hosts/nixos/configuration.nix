@@ -135,6 +135,7 @@
 
     packages = [
       "com.usebottles.bottles"
+      "io.github.Faugus.faugus-launcher"
     ];
   };
 
