@@ -122,6 +122,7 @@
     qmk
     btrfs-progs
     nh
+    nix-output-monitor
 
     #Desktop Apps
     kitty
