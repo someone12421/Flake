@@ -20,8 +20,8 @@
     
     shellAliases = {
       vim = "nvim";
-      update = "cd ~/Flake && nix flake update && cd -";
-      rebuild = "sudo nixos-rebuild switch --flake ~/Flake";
+      #update = "cd ~/Flake && nix flake update && cd -";
+      #rebuild = "sudo nixos-rebuild switch --flake ~/Flake";
     };
 
     plugins = [
@@ -39,7 +39,7 @@
 
     history.size = 1000;
     history.ignoreAllDups = true;
-    history.path = "$HOME/.zsh_history";
+    history.path = ".zsh_history";
   };
   
 }

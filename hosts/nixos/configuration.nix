@@ -105,6 +105,11 @@
 
   programs.appimage.enable = true;
 
+
+  environment.sessionVariables = {
+    NH_FLAKE = "/home/someone12421/Flake";
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -116,6 +121,7 @@
     lm_sensors
     qmk
     btrfs-progs
+    nh
 
     #Desktop Apps
     kitty
