@@ -36,10 +36,10 @@
         file = "p10k.zsh";
       }
     ];
-
-    history.size = 1000;
-    history.ignoreAllDups = true;
-    history.path = ".zsh_history";
+    history = {
+      size = 1000;
+      ignoreAllDups = true;
+    };
   };
   
 }
