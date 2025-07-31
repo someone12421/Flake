@@ -127,7 +127,7 @@
     #Desktop Apps
     kitty
     floorp
-    #pixelflasher
+    pixelflasher
     gparted
     qbittorrent
 
