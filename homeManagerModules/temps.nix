@@ -19,11 +19,8 @@
         echo "CPU Current Temp"
         sensors coretemp-isa-0000 | sed 's/(high.*//g' | tail -n +4 | sed 's/\.[0-9]//g'
 
-        echo "SSD Current Temp"
-        sensors nvme-pci-e200 | sed 's/(low.*//g' | tail -n +5 | sed 's/\.[0-9]//g'
-
         echo "Fans Current speed"
-        sensors asus-isa-0000 | sed 's/(high.*//g' | tail -n +3 | sed 's/\.[0-9]//g'
+        sensors asus-isa-000a | sed 's/(high.*//g' | tail -n +3 | sed 's/\.[0-9]//g'
       '')
     ];
   };
