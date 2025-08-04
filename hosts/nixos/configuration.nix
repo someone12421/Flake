@@ -50,6 +50,17 @@
   services.desktopManager.plasma6.enable = true;
   programs.kdeconnect.enable = true;
 
+  # Enable Hyprland.
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [ xdg-desktop-portal-hyprland ];
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -133,6 +144,7 @@
 
     #Misc.
     nixfmt-rfc-style
+    networkmanagerapplet
 
   ];
 

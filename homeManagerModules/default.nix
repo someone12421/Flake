@@ -5,6 +5,7 @@
       ./zsh
       ./kitty.nix
       ./temps.nix
+      ./hyprland.nix
     ];
     
 }
