@@ -6,6 +6,10 @@
       ./kitty.nix
       ./temps.nix
       ./hyprland.nix
+      ./spicetify.nix
     ];
     
+    spicetify.enable =
+      lib.mkDefault true;
+
 }

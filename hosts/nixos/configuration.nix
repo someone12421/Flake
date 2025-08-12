@@ -99,6 +99,7 @@
           ./home.nix
           inputs.self.outputs.homeManagerModules.default
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
+          inputs.spicetify-nix.homeManagerModules.default
         ];
       };
     };
