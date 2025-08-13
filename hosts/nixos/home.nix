@@ -36,6 +36,7 @@
     pkgs.yt-dlp
     pkgs.vlc
     pkgs.lazygit
+    pkgs.lrcget
 
     # Fonts
     pkgs.nerd-fonts.jetbrains-mono
