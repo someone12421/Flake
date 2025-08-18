@@ -142,6 +142,7 @@
     pixelflasher
     gparted
     qbittorrent
+    godot
 
     #Misc.
     nixfmt-rfc-style
