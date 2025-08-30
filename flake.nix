@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:nix-community/stylix";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
     home-manager = {
