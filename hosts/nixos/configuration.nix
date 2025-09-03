@@ -51,6 +51,9 @@
   qt.platformTheme = lib.mkForce "kde"; #temp fix for https://github.com/nix-community/stylix/issues/1865
   programs.kdeconnect.enable = true;
 
+  # Set Keyboar Layouts.
+  services.xserver.xkb.layout = "us, il";
+
   # Enable Hyprland.
   programs.hyprland = {
     enable = true;
