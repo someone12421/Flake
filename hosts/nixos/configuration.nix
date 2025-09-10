@@ -48,7 +48,6 @@
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
-  qt.platformTheme = lib.mkForce "kde"; #temp fix for https://github.com/nix-community/stylix/issues/1865
   programs.kdeconnect.enable = true;
 
   # Set Keyboar Layouts.
