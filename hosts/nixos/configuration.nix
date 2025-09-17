@@ -141,7 +141,7 @@
 
     #Desktop Apps
     kitty
-    floorp
+    floorp-bin
     pixelflasher
     gparted
     qbittorrent
