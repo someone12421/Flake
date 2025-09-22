@@ -146,6 +146,7 @@
     gparted
     qbittorrent
     godot
+    bottles
 
     #Misc.
     nixfmt-rfc-style
@@ -158,7 +159,6 @@
     update.onActivation = true;
 
     packages = [
-      "com.usebottles.bottles"
       "io.github.Faugus.faugus-launcher"
     ];
   };
