@@ -54,10 +54,10 @@
   services.xserver.xkb.layout = "us, il";
 
   # Enable Hyprland.
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  #programs.hyprland = {
+  #  enable = true;
+  #  xwayland.enable = true;
+  #};
 
   xdg.portal = {
     enable = true;
