@@ -146,6 +146,8 @@
     btrfs-progs
     nh
     nix-output-monitor
+    p7zip
+    unrar
 
     #Desktop Apps
     kitty
