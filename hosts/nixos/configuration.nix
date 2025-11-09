@@ -167,7 +167,7 @@
     update.onActivation = true;
 
     packages = [
-      "io.github.Faugus.faugus-launcher"
+      "com.heroicgameslauncher.hgl"
     ];
   };
 
