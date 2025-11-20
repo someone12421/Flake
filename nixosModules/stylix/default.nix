@@ -12,7 +12,7 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
     polarity = "dark";
 
-    image = ./plasma6-scarlet-tree.png;
+    image = ./Wallpapers/Hytale-Cursebreaker-Key-Art_2K.jpg;
 
 
 
