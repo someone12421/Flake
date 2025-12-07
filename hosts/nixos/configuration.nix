@@ -21,7 +21,9 @@
   # Enable Zsh
   programs.zsh.enable = true;
 
-  # Set the battery charge threshold to 80%
+  # Power Management.
+  services.thermald.enable = true;
+  powerManagement.powertop.enable = true;
   battery-threshold.enable = true;
 
   # Enable QMK 
