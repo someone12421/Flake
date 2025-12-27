@@ -8,7 +8,7 @@
   config = lib.mkIf config.nvidia-hybrid.enable {
     hardware.graphics = {
       enable = true;
-      extraPackages = with pkgs; [nvidia-vaapi-driver];
+      extraPackages = with pkgs; [intel-media-driver];
     };
 
     hardware.nvidia.prime = {
@@ -23,6 +23,7 @@
 
     services.xserver.videoDrivers = [ "nvidia" ];
     hardware.nvidia.open = true;
+    environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
   };
 
 }
