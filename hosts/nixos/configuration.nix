@@ -70,9 +70,6 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # Enable ADB
-  programs.adb.enable = true;
-
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -150,6 +147,7 @@
     nix-output-monitor
     p7zip
     unrar
+    android-tools
 
     #Desktop Apps
     kitty
@@ -161,7 +159,7 @@
     bottles
 
     #Misc.
-    nixfmt-rfc-style
+    nixfmt
     networkmanagerapplet
 
   ];
