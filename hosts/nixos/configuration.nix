@@ -18,6 +18,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Enable Bluetooth
+   hardware.bluetooth.enable = true;
+
   # Enable Zsh
   programs.zsh.enable = true;
 
