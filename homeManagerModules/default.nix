@@ -5,7 +5,7 @@
       ./zsh
       ./kitty.nix
       ./temps.nix
-      #./hyprland.nix
+      ./niri.nix
       ./spicetify.nix
     ];
     

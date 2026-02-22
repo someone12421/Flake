@@ -56,19 +56,16 @@
   programs.kdeconnect.enable = true;
   programs.partition-manager.enable = true;
 
-  # Set Keyboar Layouts.
-  services.xserver.xkb.layout = "us, il";
-
-  # Enable Hyprland.
-  #programs.hyprland = {
-  #  enable = true;
-  #  xwayland.enable = true;
-  #};
-
-  xdg.portal = {
+  # Enable Niri.
+  programs.niri = {
     enable = true;
-    extraPortals = with pkgs; [ xdg-desktop-portal-hyprland ];
+    package = pkgs.niri;
   };
+
+  xdg.portal.enable = true;
+
+  # Set Keyboard Layouts.
+  services.xserver.xkb.layout = "us, il";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -106,6 +103,7 @@
           inputs.self.outputs.homeManagerModules.default
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
           inputs.spicetify-nix.homeManagerModules.default
+          inputs.noctalia.homeModules.default
         ];
       };
     };
@@ -163,7 +161,7 @@
 
     #Misc.
     nixfmt
-    networkmanagerapplet
+    kdePackages.kirigami.unwrapped
 
   ];
 
