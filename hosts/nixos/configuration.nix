@@ -115,6 +115,7 @@
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "someone12421";
+  services.displayManager.defaultSession = "niri";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
