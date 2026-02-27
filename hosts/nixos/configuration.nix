@@ -57,6 +57,7 @@
   programs.partition-manager.enable = true;
 
   # Enable Niri.
+  environment.etc."xdg/menus/applications.menu".source = "${pkgs.kdePackages.plasma-workspace}/etc/xdg/menus/plasma-applications.menu";
   programs.niri = {
     enable = true;
     package = pkgs.niri;
