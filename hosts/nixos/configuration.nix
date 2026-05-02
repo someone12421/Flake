@@ -159,7 +159,6 @@
     gparted
     qbittorrent
     godot
-    bottles
 
     #Misc.
     nixfmt
@@ -176,24 +175,24 @@
     ];
   };
 
-  programs.obs-studio = {
-    enable = true;
-    enableVirtualCamera = true;
-
-    package = (
-      pkgs.obs-studio.override {
-        cudaSupport = true;
-      }
-    );
-
-    plugins = with pkgs.obs-studio-plugins; [
-     droidcam-obs
-     wlrobs
-     obs-pipewire-audio-capture
-     obs-vaapi
-     obs-gstreamer
-    ];
-  };
+ # programs.obs-studio = {
+ #   enable = true;
+ #   enableVirtualCamera = true;
+ #
+ #   package = (
+ #     pkgs.obs-studio.override {
+ #       cudaSupport = true;
+ #     }
+ #   );
+ #
+ #   plugins = with pkgs.obs-studio-plugins; [
+ #    droidcam-obs
+ #    wlrobs
+ #    obs-pipewire-audio-capture
+ #    obs-vaapi
+ #    obs-gstreamer
+ #   ];
+ # };
 
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
