@@ -14,6 +14,8 @@
 
   fonts.fontconfig.enable = true;
 
+  gtk.gtk4.theme = null;
+
   temps.enable = true;
 
   programs.vscode.enable = true;
