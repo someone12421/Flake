@@ -60,18 +60,19 @@ in
         "Mod+Q".action.close-window = {};
 
         # Noctalia Keybinds.
-        "Mod+R".action.spawn = noctalia "launcher toggle";
-        "Mod+S".action.spawn = noctalia "controlCenter toggle";
-        "Mod+Comma".action.spawn = noctalia "settings toggle";
+        "Mod+R".action.spawn-sh = "noctalia msg panel-toggle launcher";
+        "Mod+S".action.spawn-sh = "noctalia msg panel-toggle control-center";
+        "Mod+Comma".action.spawn-sh = "noctalia msg settings-toggle";
+        "Alt+Tab".action.spawn-sh = "noctalia msg window-switcher";
 
         # Audio Keybinds.
-        "XF86AudioRaiseVolume".action.spawn = noctalia "volume increase";
-        "XF86AudioLowerVolume".action.spawn = noctalia "volume decrease";
-        "XF86AudioMute".action.spawn = noctalia "volume muteOutput";
+        "XF86AudioRaiseVolume".action.spawn-sh = "noctalia msg volume-up";
+        "XF86AudioLowerVolume".action.spawn-sh = "noctalia msg volume-down";
+        "XF86AudioMute".action.spawn-sh = "noctalia msg volume-mute";
 
         # Brightness Keybinds.
-        "XF86MonBrightnessUp".action.spawn = noctalia "brightness increase";
-        "XF86MonBrightnessDown".action.spawn = noctalia "brightness decrease";
+        "XF86MonBrightnessUp".action.spawn-sh = "noctalia msg brightness-up";
+        "XF86MonBrightnessDown".action.spawn-sh = "noctalia msg brightness-down";
 
         # Workspace Keybinds.
         "Mod+1".action.focus-workspace = 1;
@@ -194,14 +195,14 @@ in
       spawn-at-startup = [
         {
           command = [
-            "noctalia-shell"
+            "noctalia"
           ];
         }
       ];
     };
   };
 
-  programs.noctalia-shell = {
+  programs.noctalia = {
     enable = true;
   };
 

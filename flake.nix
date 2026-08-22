@@ -13,7 +13,7 @@
     };
 
     noctalia = {
-      url = "github:noctalia-dev/noctalia-shell/legacy-v4";
+      url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
