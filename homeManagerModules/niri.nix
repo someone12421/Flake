@@ -1,11 +1,4 @@
-{ pkgs, lib, ... }: 
-
-let
-  noctalia = cmd: [
-    "noctalia-shell" "ipc" "call"
-  ] ++ (pkgs.lib.splitString " " cmd);
-in
-{
+{ pkgs, lib, ... }: {
 
   programs.niri = {
     package = pkgs.niri; 
@@ -65,14 +58,10 @@ in
         "Mod+Comma".action.spawn-sh = "noctalia msg settings-toggle";
         "Alt+Tab".action.spawn-sh = "noctalia msg window-switcher";
 
-        # Audio Keybinds.
-        "XF86AudioRaiseVolume".action.spawn-sh = "noctalia msg volume-up";
-        "XF86AudioLowerVolume".action.spawn-sh = "noctalia msg volume-down";
-        "XF86AudioMute".action.spawn-sh = "noctalia msg volume-mute";
-
-        # Brightness Keybinds.
-        "XF86MonBrightnessUp".action.spawn-sh = "noctalia msg brightness-up";
-        "XF86MonBrightnessDown".action.spawn-sh = "noctalia msg brightness-down";
+        # Window Keybinds.
+        "Mod+F".action.maximize-column = {};
+        "Mod+Shift+F".action.fullscreen-window = {};
+        "Mod+Space".action.toggle-window-floating = {};
 
         # Workspace Keybinds.
         "Mod+1".action.focus-workspace = 1;
@@ -93,6 +82,16 @@ in
         "Mod+Ctrl+7".action.move-column-to-workspace = 7;
         "Mod+Ctrl+8".action.move-column-to-workspace = 8;
         "Mod+Ctrl+9".action.move-column-to-workspace = 9;
+
+       # Audio Keybinds.
+        "XF86AudioRaiseVolume".action.spawn-sh = "noctalia msg volume-up";
+        "XF86AudioLowerVolume".action.spawn-sh = "noctalia msg volume-down";
+        "XF86AudioMute".action.spawn-sh = "noctalia msg volume-mute";
+
+        # Brightness Keybinds.
+        "XF86MonBrightnessUp".action.spawn-sh = "noctalia msg brightness-up";
+        "XF86MonBrightnessDown".action.spawn-sh = "noctalia msg brightness-down";
+
 
         # some default binds that i might organize/change in the future
         "Mod+Left".action.focus-column-left = {};
@@ -181,8 +180,6 @@ in
         "Mod+Ctrl+WheelScrollRight".action.move-column-right = {};
         "Mod+Ctrl+WheelScrollLeft".action.move-column-left = {};
 
-        "Mod+F".action.maximize-column = {};
-        "Mod+Shift+F".action.fullscreen-window = {};
         "Mod+C".action.center-column = {};
 
         "Mod+Minus".action.set-column-width = "-10%";
